@@ -1,0 +1,1971 @@
+<!doctype html>
+<html lang="fr"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>ETS CHERCHONS L'ARGENT - Accessoires &amp; Bijouterie de qualité</title> 
+  <meta name="description" content="Accessoires téléphoniques et bijouterie de qualité. Livraison rapide dans tout le Nord Bénin. Ring lights, trépieds, micros cravate et bijoux tendance."> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet"> 
+  <style>
+        :root {
+            --primary-color: #2ecc71;
+            --primary-dark: #27ae60;
+            --secondary-color: #3498db;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+            --gray-light: #f5f5f5;
+            --text-color: #333333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header amélioré - plus compact */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+            padding: 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0 !important;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 30px !important;
+            margin-right: 8px;
+        }
+        
+        .logo h1 {
+            font-size: 1rem !important;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 12px !important;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 6px 10px !important;
+            border-radius: 4px;
+            position: relative;
+            font-size: 0.85rem !important;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+        
+        nav ul li a:hover::after,
+        nav ul li a.active::after {
+            width: 80%;
+        }
+        
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: var(--primary-color);
+        }
+        
+        /* Menu déroulant compact */
+        .compact-menu {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--dark-color);
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .menu-toggle:hover {
+            color: var(--primary-color);
+        }
+        
+        .menu-toggle i {
+            margin-left: 5px;
+            transition: var(--transition);
+        }
+        
+        .menu-toggle.active i {
+            transform: rotate(180deg);
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: var(--shadow);
+            border-radius: 4px;
+            min-width: 200px;
+            padding: 10px 0;
+            z-index: 1001;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .dropdown-menu.active {
+            display: block;
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: var(--dark-color);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+        
+        .dropdown-menu a:hover {
+            background-color: var(--gray-light);
+            color: var(--primary-color);
+        }
+        
+        .dropdown-menu a i {
+            margin-right: 8px;
+            width: 16px;
+            text-align: center;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.3rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--dark-color);
+            transition: var(--transition);
+        }
+        
+        .mobile-menu-btn:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Hero Section avec votre image */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('immmma.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1s ease;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .btn i {
+            margin-right: 8px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-secondary {
+            background-color: white;
+            color: var(--dark-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--gray-light);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+        }
+        
+        /* Promotions */
+        .promo-banner {
+            background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .promo-banner p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .countdown {
+            font-weight: 700;
+            color: #ffdd00;
+            margin-left: 10px;
+        }
+        
+        /* Sections communes */
+        section {
+            padding: 70px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            font-size: 1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            z-index: 10;
+        }
+        
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f5f5f5;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+        
+        .product-info {
+            padding: 15px;
+        }
+        
+        .product-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .product-price .old-price {
+            font-size: 0.9rem;
+            color: #999;
+            text-decoration: line-through;
+            margin-right: 8px;
+        }
+        
+        .product-description {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .product-features {
+            margin-bottom: 15px;
+        }
+        
+        .product-features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .product-features li {
+            margin-bottom: 4px;
+            font-size: 0.85rem;
+            color: #666;
+            display: flex;
+            align-items: center;
+        }
+        
+        .product-features i {
+            color: var(--primary-color);
+            margin-right: 6px;
+            font-size: 0.75rem;
+        }
+        
+        /* Product Modal */
+        .product-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1100;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .modal-content {
+            background-color: white;
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            animation: modalFadeIn 0.3s ease;
+        }
+        
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            color: #333;
+            background: rgba(255, 255, 255, 0.8);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: var(--transition);
+        }
+        
+        .close-modal:hover {
+            background: white;
+            transform: rotate(90deg);
+        }
+        
+        .modal-product-image {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            background-color: #f5f5f5;
+        }
+        
+        .modal-product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .modal-product-info {
+            padding: 25px;
+        }
+        
+        .modal-product-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .modal-product-price {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .modal-product-description {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .modal-product-features {
+            margin-bottom: 25px;
+        }
+        
+        .modal-product-features ul {
+            list-style: none;
+            padding-left: 0;
+            columns: 2;
+        }
+        
+        .modal-product-features li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .modal-product-features i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+        
+        .modal-action-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .about-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .value-item {
+            text-align: center;
+            padding: 20px 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .value-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-item i {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+        }
+        
+        .value-item h4 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        
+        /* Testimonials améliorés */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #555;
+            position: relative;
+            z-index: 2;
+            font-size: 0.95rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .author-info h4 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+        
+        .author-info p {
+            font-size: 0.85rem;
+            color: #777;
+        }
+        
+        .rating {
+            color: #FFD700;
+            margin-top: 4px;
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Form */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, var(--dark-color), #1a2530);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            height: fit-content;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite linear;
+        }
+        
+        @keyframes shine {
+            0% { right: -50%; }
+            100% { right: 150%; }
+        }
+        
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .contact-details {
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .contact-details p {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+        
+        .contact-details i {
+            margin-right: 12px;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            width: 18px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 12px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-form h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: var(--dark-color);
+            font-size: 0.95rem;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.2);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Category Filter */
+        .category-filter {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .category-btn {
+            padding: 10px 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .category-btn.active, .category-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 60px 0 25px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 35px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .footer-column p {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #bbb;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-column ul li a i {
+            margin-right: 8px;
+            font-size: 0.75rem;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--primary-color);
+            transform: translateX(5px);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            margin-top: 15px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 10px 12px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            font-size: 0.9rem;
+        }
+        
+        .newsletter-form button {
+            padding: 0 12px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .newsletter-form button:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            color: #bbb;
+        }
+        
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 45px;
+            height: 45px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 999;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        /* Responsive Design - Optimisé pour mobile */
+        @media (max-width: 992px) {
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-product-features ul {
+                columns: 1;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px 0;
+            }
+            
+            .logo {
+                margin-bottom: 10px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-top: 15px;
+            }
+            
+            nav ul li {
+                margin: 8px 0;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+            
+            .mobile-menu {
+                display: none;
+                width: 100%;
+            }
+            
+            .mobile-menu.active {
+                display: block;
+            }
+            
+            .hero {
+                padding: 70px 20px;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 280px;
+                margin-bottom: 8px;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-action-buttons {
+                flex-direction: column;
+            }
+            
+            .category-filter {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .category-btn {
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            /* Menu déroulant en version mobile */
+            .compact-menu {
+                width: 100%;
+                margin: 10px 0;
+            }
+            
+            .menu-toggle {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .dropdown-menu {
+                position: static;
+                width: 100%;
+                box-shadow: none;
+                border-radius: 0;
+                animation: none;
+            }
+        }
+        
+        /* Page specific styles */
+        .page {
+            display: none;
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        /* Loading animation for images */
+        .lazy-load {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .lazy-load.loaded {
+            opacity: 1;
+        }
+        
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        
+        .toast.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style> 
+ </head> 
+ <body> <!-- Header amélioré avec menu compact --> 
+  <header> 
+   <div class="container"> 
+    <div class="header-container"> 
+     <div class="logo"> 
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjEwIiB5PSIzNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzJlY2M3MSI+RVRTIENIRVJDSE9OUyBMJ0FSR0VOVDwvdGV4dD48L3N2Zz4=" alt="ETS CHERCHONS L'ARGENT" class="lazy-load"> 
+      <h1>ETS CHERCHONS L'ARGENT</h1> 
+     </div> <!-- Menu déroulant compact --> 
+     <div class="compact-menu"> <button class="menu-toggle" id="menuToggle"> Menu <i class="fas fa-chevron-down"></i> </button> 
+      <div class="dropdown-menu" id="dropdownMenu"> <a href="#accueil" class="nav-link active"><i class="fas fa-home"></i> Accueil</a> <a href="#boutique" class="nav-link"><i class="fas fa-shopping-bag"></i> Boutique</a> <a href="#apropos" class="nav-link"><i class="fas fa-info-circle"></i> À propos</a> <a href="#temoignages" class="nav-link"><i class="fas fa-star"></i> Témoignages</a> <a href="#contact" class="nav-link"><i class="fas fa-phone"></i> Contact</a> 
+      </div> 
+     </div> <button class="mobile-menu-btn" id="mobileMenuBtn"> <i class="fas fa-bars"></i> </button> 
+    </div> 
+   </div> 
+  </header> <!-- Main Content --> 
+  <main> <!-- Home Page --> 
+   <div id="accueil" class="page active"> <!-- Hero Banner avec votre image --> 
+    <section class="hero"> 
+     <div class="container"> 
+      <div class="hero-content"> 
+       <h2>Accessoires &amp; Bijouterie de qualité</h2> 
+       <p>Livraison rapide dans tout le Nord Bénin ! Des produits fiables à prix abordables pour tous</p> 
+       <div class="btn-container"> <a href="#boutique" class="btn btn-primary nav-link" data-target="boutique"><i class="fas fa-shopping-cart"></i> Achetez maintenant</a> <a href="https://wa.me/22962775417?text=Bonjour,%20je%20souhaite%20commander%20un%20produit" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Commandez sur WhatsApp</a> 
+       </div> 
+      </div> 
+     </div> 
+    </section> <!-- Promo Banner --> 
+    <section class="promo-banner"> 
+     <div class="container"> 
+      <p>🎉 Promotion spéciale – 10% de réduction sur tous les trépieds cette semaine ! <span class="countdown">Offre valable encore <span id="countdown-days">2</span> jours</span></p> 
+     </div> 
+    </section> <!-- Featured Products --> 
+    <section> 
+     <div class="container"> 
+      <div class="section-title"> 
+       <h2>Nos Produits Vedettes</h2> 
+       <p>Découvrez nos articles les plus populaires et tendance du moment</p> 
+      </div> 
+      <div class="products-grid"> <!-- Product 1 --> 
+       <div class="product-card" data-id="1" data-category="accessoires"> 
+        <div class="product-badge">
+         Populaire
+        </div> 
+        <div class="product-image"> 
+         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0=" data-src="rlf.jpg" alt="Ring Light 10 pouces" class="lazy-load" loading="lazy"> 
+        </div> 
+        <div class="product-info"> 
+         <h3>Ring Light 10 pouces</h3> 
+         <div class="product-price">
+          5 500 FCFA
+         </div> 
+         <p class="product-description">Anneau lumineux professionnel avec support téléphone pour des photos et vidéos de qualité studio.</p> 
+         <div class="product-features"> 
+          <ul> 
+           <li><i class="fas fa-check"></i> Lumières LED réglables</li> 
+           <li><i class="fas fa-check"></i> Support téléphone inclus</li> 
+           <li><i class="fas fa-check"></i> Alimentation USB</li> 
+          </ul> 
+         </div> <button class="btn btn-primary view-product" data-id="1"><i class="fas fa-eye"></i> Voir détails</button> 
+        </div> 
+       </div> <!-- Product 2 --> 
+       <div class="product-card" data-id="2" data-category="accessoires"> 
+        <div class="product-badge">
+         Promo
+        </div> 
+        <div class="product-image"> 
+         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0=" data-src="ven.jpg" alt="Ventilo Portable" class="lazy-load" loading="lazy"> 
+        </div> 
+        <div class="product-info"> 
+         <h3>Ventilo Portable USB</h3> 
+         <div class="product-price">
+          3 500 FCFA
+         </div> 
+         <p class="product-description">Ventilateur portable rechargeable par USB, idéal pour les déplacements et les journées chaudes.</p> 
+         <div class="product-features"> 
+          <ul> 
+           <li><i class="fas fa-check"></i> 3 vitesses réglables</li> 
+           <li><i class="fas fa-check"></i> Batterie intégrée</li> 
+           <li><i class="fas fa-check"></i> Léger et portable</li> 
+          </ul> 
+         </div> <button class="btn btn-primary view-product" data-id="2"><i class="fas fa-eye"></i> Voir détails</button> 
+        </div> 
+       </div> <!-- Product 3 --> 
+       <div class="product-card" data-id="3" data-category="accessoires"> 
+        <div class="product-image"> 
+         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0=" data-src="mic.jpg" alt="Micro Cravate" class="lazy-load" loading="lazy"> 
+        </div> 
+        <div class="product-info"> 
+         <h3>Micro Cravate sans Fil</h3> 
+         <div class="product-price">
+          5 000 FCFA
+         </div> 
+         <p class="product-description">Microphone cravate sans fil pour enregistrements audio professionnels et streaming.</p> 
+         <div class="product-features"> 
+          <ul> 
+           <li><i class="fas fa-check"></i> Connexion Bluetooth</li> 
+           <li><i class="fas fa-check"></i> Autonomie 6 heures</li> 
+           <li><i class="fas fa-check"></i> Compatible smartphone</li> 
+          </ul> 
+         </div> <button class="btn btn-primary view-product" data-id="3"><i class="fas fa-eye"></i> Voir détails</button> 
+        </div> 
+       </div> <!-- Product 4 --> 
+       <div class="product-card" data-id="4" data-category="accessoires"> 
+        <div class="product-badge">
+         Nouveau
+        </div> 
+        <div class="product-image"> 
+         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0=" data-src="tre.jpg" alt="Trépied Téléphone" class="lazy-load" loading="lazy"> 
+        </div> 
+        <div class="product-info"> 
+         <h3>Trépied Téléphone Professionnel</h3> 
+         <div class="product-price">
+          2 000 FCFA
+         </div> 
+         <p class="product-description">Trépied ajustable avec support téléphone pour des photos et vidéos stables.</p> 
+         <div class="product-features"> 
+          <ul> 
+           <li><i class="fas fa-check"></i> Hauteur ajustable</li> 
+           <li><i class="fas fa-check"></i> Télécommande incluse</li> 
+           <li><i class="fas fa-check"></i> Pliable et portable</li> 
+          </ul> 
+         </div> <button class="btn btn-primary view-product" data-id="4"><i class="fas fa-eye"></i> Voir détails</button> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </section> 
+   </div> <!-- Boutique Page --> 
+   <div id="boutique" class="page"> 
+    <section> 
+     <div class="container"> 
+      <div class="section-title"> 
+       <h2>Notre Boutique</h2> 
+       <p>Découvrez tous nos produits de qualité à prix compétitifs</p> 
+      </div> 
+      <div class="category-filter"> <button class="category-btn active" data-category="all">Tous les produits</button> <button class="category-btn" data-category="accessoires">Accessoires</button> <button class="category-btn" data-category="bijoux">Bijoux</button> <button class="category-btn" data-category="montres">Montres</button> 
+      </div> 
+      <div class="products-grid"> <!-- Additional products will be loaded via JS --> 
+      </div> 
+     </div> 
+    </section> 
+   </div> <!-- About Page --> 
+   <div id="apropos" class="page"> 
+    <section> 
+     <div class="container"> 
+      <div class="section-title"> 
+       <h2>À Propos de Nous</h2> 
+       <p>Votre partenaire de confiance pour des accessoires de qualité</p> 
+      </div> 
+      <div class="about-content"> 
+       <div class="about-image"> 
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmNWY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9IjAuMzVlbSI+SW1hZ2UgZGUgbCdlbWFnYXNpbiBkdSBtYWdhemluPC90ZXh0Pjwvc3ZnPg==" data-src="immmma.jpg" alt="Notre magasin" class="lazy-load" loading="lazy"> 
+       </div> 
+       <div class="about-text"> 
+        <h3>Notre histoire</h3> 
+        <p>Fondé en 2020, ETS CHERCHONS L'ARGENT s'est rapidement imposé comme une référence dans la vente d'accessoires téléphoniques et de bijouterie de qualité au Nord Bénin.</p> 
+        <p>Notre mission est simple : offrir à nos clients des produits fiables à des prix abordables, avec un service client exceptionnel.</p> 
+        <div class="values-grid"> 
+         <div class="value-item"> <i class="fas fa-gem"></i> 
+          <h4>Qualité</h4> 
+          <p>Des produits testés et approuvés</p> 
+         </div> 
+         <div class="value-item"> <i class="fas fa-shipping-fast"></i> 
+          <h4>Livraison Rapide</h4> 
+          <p>Dans tout le Nord Bénin</p> 
+         </div> 
+         <div class="value-item"> <i class="fas fa-headset"></i> 
+          <h4>Support Client</h4> 
+          <p>Assistance 7j/7</p> 
+         </div> 
+         <div class="value-item"> <i class="fas fa-tags"></i> 
+          <h4>Prix Abordables</h4> 
+          <p>Meilleurs prix garantis</p> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </section> 
+   </div> <!-- Testimonials Page --> 
+   <div id="temoignages" class="page"> 
+    <section> 
+     <div class="container"> 
+      <div class="section-title"> 
+       <h2>Témoignages Clients</h2> 
+       <p>Ce que nos clients disent de nos produits et services</p> 
+      </div> 
+      <div class="testimonials-grid"> 
+       <div class="testimonial-card"> 
+        <p class="testimonial-text">J'ai acheté le Ring Light et je suis très satisfait de la qualité. La luminosité est parfaite pour mes vidéos YouTube. Livraison rapide et service client au top !</p> 
+        <div class="testimonial-author"> 
+         <div class="author-avatar">
+          K.D
+         </div> 
+         <div class="author-info"> 
+          <h4>Koffi D.</h4> 
+          <p>Client régulier</p> 
+          <div class="rating"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="testimonial-card"> 
+        <p class="testimonial-text">Le trépied est très solide et stable. J'apprécie particulièrement la télécommande incluse qui me permet de prendre des photos à distance. Excellent rapport qualité-prix.</p> 
+        <div class="testimonial-author"> 
+         <div class="author-avatar">
+          A.S
+         </div> 
+         <div class="author-info"> 
+          <h4>Amélie S.</h4> 
+          <p>Photographe amateur</p> 
+          <div class="rating"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="testimonial-card"> 
+        <p class="testimonial-text">Le micro cravate a considérablement amélioré la qualité audio de mes lives sur les réseaux sociaux. Installation facile et connexion stable. Je recommande vivement !</p> 
+        <div class="testimonial-author"> 
+         <div class="author-avatar">
+          M.K
+         </div> 
+         <div class="author-info"> 
+          <h4>Marc K.</h4> 
+          <p>Streamer</p> 
+          <div class="rating"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </section> 
+   </div> <!-- Contact Page --> 
+   <div id="contact" class="page"> 
+    <section> 
+     <div class="container"> 
+      <div class="section-title"> 
+       <h2>Contactez-Nous</h2> 
+       <p>Nous sommes à votre écoute pour toutes vos questions</p> 
+      </div> 
+      <div class="contact-content"> 
+       <div class="contact-info"> 
+        <h3>Informations de contact</h3> 
+        <div class="contact-details"> 
+         <p><i class="fas fa-map-marker-alt"></i> Parakou, Nord Bénin</p> 
+         <p><i class="fas fa-phone"></i> +229 62 77 54 17</p> 
+         <p><i class="fas fa-envelope"></i> contact@etscherchonslargent.bj</p> 
+         <p><i class="fas fa-clock"></i> Lun-Sam: 8h-19h | Dim: 10h-16h</p> 
+        </div> 
+        <h3>Suivez-nous</h3> 
+        <div class="social-links"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-whatsapp"></i></a> <a href="#"><i class="fab fa-tiktok"></i></a> 
+        </div> 
+       </div> 
+       <div class="contact-form"> 
+        <h3>Envoyez-nous un message</h3> 
+        <form id="contactForm"> 
+         <div class="form-group"> <label for="name">Nom complet</label> 
+          <input type="text" id="name" name="name" required> 
+         </div> 
+         <div class="form-group"> <label for="phone">Téléphone</label> 
+          <input type="tel" id="phone" name="phone" required> 
+         </div> 
+         <div class="form-group"> <label for="email">Email (optionnel)</label> 
+          <input type="email" id="email" name="email"> 
+         </div> 
+         <div class="form-group"> <label for="subject">Sujet</label> <select id="subject" name="subject" required> <option value="">Sélectionnez un sujet</option> <option value="commande">Commande</option> <option value="information">Information produit</option> <option value="livraison">Livraison</option> <option value="reclamation">Réclamation</option> <option value="autre">Autre</option> </select> 
+         </div> 
+         <div class="form-group"> <label for="message">Message</label> <textarea id="message" name="message" required></textarea> 
+         </div> <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Envoyer le message</button> 
+        </form> 
+       </div> 
+      </div> 
+     </div> 
+    </section> 
+   </div> 
+  </main> <!-- Product Modal --> 
+  <div class="product-modal" id="productModal"> 
+   <div class="modal-content"> <span class="close-modal" id="closeModal">×</span> 
+    <div class="modal-product-image"> 
+     <img id="modalImage" src="" alt=""> 
+    </div> 
+    <div class="modal-product-info"> 
+     <h2 id="modalTitle"></h2> 
+     <div class="modal-product-price" id="modalPrice"></div> 
+     <p class="modal-product-description" id="modalDescription"></p> 
+     <div class="modal-product-features"> 
+      <h3>Caractéristiques</h3> 
+      <ul id="modalFeatures"></ul> 
+     </div> 
+     <div class="modal-action-buttons"> <a href="https://wa.me/22962775417?text=Bonjour,%20je%20souhaite%20commander%20le%20produit%20:" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Commander sur WhatsApp</a> <button class="btn btn-secondary" id="closeModalBtn">Continuer mes achats</button> 
+     </div> 
+    </div> 
+   </div> 
+  </div> <!-- Toast Notification --> 
+  <div class="toast" id="toast">
+   Message envoyé avec succès!
+  </div> <!-- Back to Top Button --> <a href="#" class="back-to-top" id="backToTop"> <i class="fas fa-arrow-up"></i> </a> <!-- Footer --> 
+  <footer> 
+   <div class="container"> 
+    <div class="footer-content"> 
+     <div class="footer-column"> 
+      <h3>À propos</h3> 
+      <p>ETS CHERCHONS L'ARGENT - Votre boutique de confiance pour accessoires téléphoniques et bijouterie de qualité au Bénin.</p> 
+      <p>Livraison rapide, produits garantis, service client exceptionnel.</p> 
+     </div> 
+     <div class="footer-column"> 
+      <h3>Liens rapides</h3> 
+      <ul> 
+       <li><a href="#accueil" class="nav-link"><i class="fas fa-chevron-right"></i> Accueil</a></li> 
+       <li><a href="#boutique" class="nav-link"><i class="fas fa-chevron-right"></i> Boutique</a></li> 
+       <li><a href="#apropos" class="nav-link"><i class="fas fa-chevron-right"></i> À propos</a></li> 
+       <li><a href="#temoignages" class="nav-link"><i class="fas fa-chevron-right"></i> Témoignages</a></li> 
+       <li><a href="#contact" class="nav-link"><i class="fas fa-chevron-right"></i> Contact</a></li> 
+      </ul> 
+     </div> 
+     <div class="footer-column"> 
+      <h3>Informations</h3> 
+      <ul> 
+       <li><a href="#"><i class="fas fa-chevron-right"></i> Politique de livraison</a></li> 
+       <li><a href="#"><i class="fas fa-chevron-right"></i> Politique de retour</a></li> 
+       <li><a href="#"><i class="fas fa-chevron-right"></i> Conditions d'utilisation</a></li> 
+       <li><a href="#"><i class="fas fa-chevron-right"></i> Politique de confidentialité</a></li> 
+      </ul> 
+     </div> 
+     <div class="footer-column"> 
+      <h3>Newsletter</h3> 
+      <p>Inscrivez-vous pour recevoir nos offres exclusives et promotions.</p> 
+      <form class="newsletter-form"> 
+       <input type="email" placeholder="Votre email" required> <button type="submit"><i class="fas fa-paper-plane"></i></button> 
+      </form> 
+     </div> 
+    </div> 
+    <div class="copyright"> 
+     <p>© 2023 ETS CHERCHONS L'ARGENT. Tous droits réservés.</p> 
+    </div> 
+   </div> 
+  </footer> 
+  <script>
+        // Données des produits
+        const products = [
+            {
+                id: 1,
+                name: "Ring Light 10 pouces",
+                price: "5 500 FCFA",
+                image: "rlf.jpg",
+                category: "accessoires",
+                description: "Anneau lumineux professionnel avec support téléphone pour des photos et vidéos de qualité studio. Parfait pour les créateurs de contenu, les streamers et les photographes amateurs.",
+                features: [
+                    "Lumières LED réglables en intensité",
+                    "Support téléphone inclus (6 pouces max)",
+                    "Alimentation via câble USB",
+                    "Hauteur ajustable (60cm à 120cm)",
+                    "Base stable et pliable"
+                ]
+            },
+            {
+                id: 2,
+                name: "Ventilo Portable USB",
+                price: "3 500 FCFA",
+                image: "ven.jpg",
+                category: "accessoires",
+                description: "Ventilateur portable rechargeable par USB, idéal pour les déplacements et les journées chaudes. Design compact et efficace.",
+                features: [
+                    "3 vitesses de ventilation réglables",
+                    "Batterie intégrée 2000mAh",
+                    "Autonomie jusqu'à 6 heures",
+                    "Design léger et portable (200g)",
+                    "Recharge via câble USB inclus"
+                ]
+            },
+            {
+                id: 3,
+                name: "Micro Cravate sans Fil",
+                price: "5 000 FCFA",
+                image: "mic.jpg",
+                category: "accessoires",
+                description: "Microphone cravate sans fil pour enregistrements audio professionnels et streaming. Compatible avec la plupart des smartphones.",
+                features: [
+                    "Connexion Bluetooth 5.0 stable",
+                    "Autonomie de 6 heures en continu",
+                    "Réduction du bruit ambiant",
+                    "Compatibilité smartphone et appareils photo",
+                    "Portée effective: 15 mètres"
+                ]
+            },
+            {
+                id: 4,
+                name: "Trépied Téléphone Professionnel",
+                price: "2 000 FCFA",
+                image: "tre.jpg",
+                category: "accessoires",
+                description: "Trépied ajustable avec support téléphone pour des photos et vidéos stables. Idéal pour les selfies de groupe et le time-lapse.",
+                features: [
+                    "Hauteur ajustable de 40cm à 150cm",
+                    "Télécommande Bluetooth incluse",
+                    "Pliable et portable (500g)",
+                    "Support téléphone réglable",
+                    "Compatibilité: smartphones 4 à 7 pouces"
+                ]
+            },
+            {
+                id: 5,
+                name: "Montre Connectée Complète",
+                price: "10 000 FCFA",
+                image: "mont.jpg",
+                category: "montres",
+                description: "Montre connectée avec toutes les fonctionnalités essentielles pour le fitness et les notifications intelligentes.",
+                features: [
+                    "Écran tactile couleur 1.3 pouces",
+                    "Suivi de la fréquence cardiaque",
+                    "Résistance à l'eau (IP67)",
+                    "Batterie 7 jours d'autonomie",
+                    "Notifications d'appels et messages"
+                ]
+            },
+            {
+                id: 6,
+                name: "Micro Mini Haute Qualité",
+                price: "10 000 FCFA",
+                image: "micc.jpg",
+                category: "accessoires",
+                description: "Microphone miniature de haute qualité pour enregistrement vocal professionnel. Parfait pour le streaming et les interviews.",
+                features: [
+                    "Capteur haute sensibilité",
+                    "Réduction du bruit numérique",
+                    "Compatibilité universelle",
+                    "Câble de 2 mètres inclus",
+                    "Design discret et efficace"
+                ]
+            },
+            {
+                id: 7,
+                name: "Montre avec Chaîne Élégante",
+                price: "10 000 FCFA",
+                image: "monc.jpg",
+                category: "bijoux",
+                description: "Ensemble montre et chaîne élégante pour un style raffiné. Parfait pour les occasions spéciales.",
+                features: [
+                    "Design moderne et élégant",
+                    "Bracelet en acier inoxydable",
+                    "Mouvement à quartz précis",
+                    "Étanchéité 30m",
+                    "Boîtier résistant aux chocs"
+                ]
+            },
+            {
+                id: 8,
+                name: "Chaine Alphabétique",
+                price: "1 000 FCFA",
+                image: "ch.jpg",
+                category: "bijoux",
+                description: "Chaine alphabétique personnalisable. Choisissez la lettre qui vous représente.",
+                features: [
+                    "Matériau: acier inoxydable",
+                    "Longueur: 45 cm",
+                    "Fermoir sécurisé",
+                    "Pendentif lettre personnalisable",
+                    "Design intemporel"
+                ]
+            },
+            {
+                id: 9,
+                name: "Montre Connectée A10",
+                price: "4 000 FCFA",
+                image: "monn.jpg",
+                category: "montres",
+                description: "Montre connectée modèle A10 avec écran tactile et fonctions de fitness tracking.",
+                features: [
+                    "Écran tactile 1.2 pouces",
+                    "Monitoring du sommeil",
+                    "Résistance à l'eau",
+                    "Batterie 5 jours d'autonomie",
+                    "Notifications smartphone"
+                ]
+            },
+            {
+                id: 10,
+                name: "Parapluie Compact",
+                price: "4 500 FCFA",
+                image: "papa.jpg",
+                category: "accessoires",
+                description: "Parapluie compact et résistant, parfait pour se protéger des intempéries.",
+                features: [
+                    "Design compact et portable",
+                    "Toile imperméable résistante",
+                    "Mécanisme automatique",
+                    "Manoche ergonomique",
+                    "Porte-parapluie inclus"
+                ]
+            },
+            {
+                id: 11,
+                name: "Casque Audio Sans Fil",
+                price: "2 000 FCFA",
+                image: "vasq.jpg",
+                category: "accessoires",
+                description: "Casque audio sans fil avec un son immersif et un confort d'utilisation prolongé.",
+                features: [
+                    "Connexion Bluetooth 5.0",
+                    "Autonomie 8 heures",
+                    "Microphone intégré pour appels",
+                    "Design pliable",
+                    "Charge rapide USB-C"
+                ]
+            },
+            {
+                id: 12,
+                name: "Mini Ventilateur USB",
+                price: "2 000 FCFA",
+                image: "miniv.jpg",
+                category: "accessoires",
+                description: "Mini ventilateur de poche alimenté par USB pour une fraîcheur instantanée.",
+                features: [
+                    "Design ultra compact",
+                    "Alimentation USB",
+                    "2 vitesses de ventilation",
+                    "Silencieux et efficace",
+                    "Poids: seulement 100g"
+                ]
+            }
+        ];
+
+        // DOM Elements
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const pages = document.querySelectorAll('.page');
+        const viewProductBtns = document.querySelectorAll('.view-product');
+        const productModal = document.getElementById('productModal');
+        const closeModalBtn = document.getElementById('closeModal');
+        const closeModalBtn2 = document.getElementById('closeModalBtn');
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalFeatures = document.getElementById('modalFeatures');
+        const backToTopBtn = document.getElementById('backToTop');
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const productsGrid = document.querySelectorAll('.products-grid')[1];
+        const contactForm = document.getElementById('contactForm');
+        const toast = document.getElementById('toast');
+        const menuToggle = document.getElementById('menuToggle');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        // Menu déroulant
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            dropdownMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu déroulant en cliquant à l'extérieur
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                dropdownMenu.classList.remove('active');
+            }
+        });
+
+        // Mobile Menu Toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+
+        // Navigation
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                
+                // Update active nav link
+                navLinks.forEach(navLink => navLink.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Show target page
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                    if (page.id === targetId) {
+                        page.classList.add('active');
+                    }
+                });
+                
+                // Close mobile menu if open
+                document.querySelector('nav ul').classList.remove('active');
+                
+                // Fermer le menu déroulant
+                menuToggle.classList.remove('active');
+                dropdownMenu.classList.remove('active');
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // Product Modal
+        viewProductBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const productId = parseInt(btn.getAttribute('data-id'));
+                const product = products.find(p => p.id === productId);
+                
+                if (product) {
+                    modalImage.src = product.image;
+                    modalTitle.textContent = product.name;
+                    modalPrice.textContent = product.price;
+                    modalDescription.textContent = product.description;
+                    
+                    // Clear previous features
+                    modalFeatures.innerHTML = '';
+                    
+                    // Add features
+                    product.features.forEach(feature => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<i class="fas fa-check"></i> ${feature}`;
+                        modalFeatures.appendChild(li);
+                    });
+                    
+                    // Show modal
+                    productModal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        // Close Modal
+        closeModalBtn.addEventListener('click', closeModal);
+        closeModalBtn2.addEventListener('click', closeModal);
+        
+        function closeModal() {
+            productModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === productModal) {
+                closeModal();
+            }
+        });
+
+        // Back to Top Button
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Category Filter
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const category = btn.getAttribute('data-category');
+                
+                // Update active button
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Filter products
+                renderProducts(category);
+            });
+        });
+
+        // Render Products
+        function renderProducts(category = 'all') {
+            productsGrid.innerHTML = '';
+            
+            const filteredProducts = category === 'all' 
+                ? products 
+                : products.filter(product => product.category === category);
+            
+            filteredProducts.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.setAttribute('data-id', product.id);
+                productCard.setAttribute('data-category', product.category);
+                
+                productCard.innerHTML = `
+                    <div class="product-image">
+                                               <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmNWY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9IjAuMzVlbSI+Q2hhcmdlbWVudCBkZSBsJ2ltYWdlLi4uPC90ZXh0Pjwvc3ZnPg==" 
+                             data-src="${product.image}" 
+                             alt="${product.name}" 
+                             class="lazy-load" 
+                             loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <div class="product-price">${product.price}</div>
+                        <p class="product-description">${product.description.substring(0, 80)}...</p>
+                        <button class="btn btn-primary view-product" data-id="${product.id}"><i class="fas fa-eye"></i> Voir détails</button>
+                    </div>
+                `;
+                
+                productsGrid.appendChild(productCard);
+            });
+            
+            // Re-attach event listeners to the new product buttons
+            document.querySelectorAll('.view-product').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-id'));
+                    const product = products.find(p => p.id === productId);
+                    
+                    if (product) {
+                        modalImage.src = product.image;
+                        modalTitle.textContent = product.name;
+                        modalPrice.textContent = product.price;
+                        modalDescription.textContent = product.description;
+                        
+                        // Clear previous features
+                        modalFeatures.innerHTML = '';
+                        
+                        // Add features
+                        product.features.forEach(feature => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<i class="fas fa-check"></i> ${feature}`;
+                            modalFeatures.appendChild(li);
+                        });
+                        
+                        // Show modal
+                        productModal.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+        }
+
+        // Contact Form
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Simulate form submission
+            setTimeout(() => {
+                contactForm.reset();
+                showToast('Message envoyé avec succès!');
+            }, 1000);
+        });
+
+        // Toast Notification
+        function showToast(message) {
+            toast.textContent = message;
+            toast.classList.add('visible');
+            
+            setTimeout(() => {
+                toast.classList.remove('visible');
+            }, 3000);
+        }
+
+        // Lazy Loading Images
+        document.addEventListener('DOMContentLoaded', function() {
+            const lazyImages = [].slice.call(document.querySelectorAll('img.lazy-load'));
+            
+            if ('IntersectionObserver' in window) {
+                const lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            const lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove('lazy-load');
+                            lazyImage.classList.add('loaded');
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+                
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            } else {
+                // Fallback for browsers without IntersectionObserver support
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImage.src = lazyImage.dataset.src;
+                });
+            }
+        });
+
+        // Initialize
+        renderProducts();
+    </script>  
+ 
+</body></html>
